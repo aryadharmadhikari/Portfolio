@@ -6,15 +6,15 @@ A minimal personal website built with React and Vite. It has a home page, a blog
 
 ### Home
 
-![Home page](client/public/screenshots/home-page.png)
+![Home page](public/screenshots/home-page.png)
 
 ### Blog
 
-![Blog page](client/public/screenshots/blog-page.png)
+![Blog page](public/screenshots/blog-page.png)
 
 ### Photos
 
-![Photos page](client/public/screenshots/photos-page.png)
+![Photos page](public/screenshots/photos-page.png)
 
 ## Requirements
 
@@ -30,8 +30,8 @@ Create a production build with `npm run build`. Preview it locally with `npm run
 
 ## Add content
 
-- Add blog entries to `client/src/content/posts.js`. Each entry can include `slug`, `date`, `title`, `excerpt`, `body`, and `tags`.
-- Put photo files in `client/public/photos/` and add their `id`, `src`, `title`, optional `alt`, and optional `location` to `client/src/content/photos.js`. Use paths such as `/photos/coast.jpg` for `src`.
+- Add blog entries to `src/content/posts.js`. Each entry can include `slug`, `date`, `title`, `excerpt`, `body`, and `tags`.
+- Put photo files in `public/photos/` and add their `id`, `src`, `title`, optional `alt`, and optional `location` to `src/content/photos.js`. Use paths such as `/photos/coast.jpg` for `src`.
 - Rebuild and redeploy after editing content.
 
-Update the profile links in `client/src/data.js`; edit the introduction and other home page content in `client/src/pages/Home.jsx`.
+Update the profile links in `src/data.js`; edit the introduction and other home page content in `src/pages/Home.jsx`.
