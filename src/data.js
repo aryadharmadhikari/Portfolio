@@ -1,6 +1,7 @@
 export const profile = {
   name: "Arya Dharmadhikari",
   githubUsername: "aryadharmadhikari",
+  avatar: "/images/avatar.jpg",
   links: [
     { label: "GitHub", icon: "github", href: "https://github.com/aryadharmadhikari" },
     { label: "X", icon: "x", href: "https://x.com/aryapd2006" },

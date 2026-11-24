@@ -5,12 +5,21 @@ export default function Home({ profile }) {
   return (
     <div className="home-page">
       <section className="introduction">
-        <h1>Hi, I’m Arya.</h1>
-        <p>
-          I’m an engineering apprentice at Frappe and a student at DBIT, Mumbai.
-          I enjoy building for the web, learning in the open, and helping others
-          get started.
-        </p>
+        <div className="intro-header">
+          {profile.avatar && (
+            <div className="intro-avatar">
+              <img src={profile.avatar} alt={profile.name} />
+            </div>
+          )}
+          <div className="intro-text">
+            <h1>Hi, I’m Arya.</h1>
+            <p>
+              I’m an engineering apprentice at Frappe and a student at DBIT, Mumbai.
+              I enjoy building for the web, learning in the open, and helping others
+              get started.
+            </p>
+          </div>
+        </div>
         <div className="social-links" aria-label="Find me online">
           {profile.links.map((link) => (
             <a
