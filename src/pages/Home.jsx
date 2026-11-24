@@ -1,4 +1,5 @@
 import Icon from "../Icon.jsx";
+import GitHubContributions from "../components/GitHubContributions.jsx";
 
 export default function Home({ profile }) {
   return (
@@ -25,6 +26,7 @@ export default function Home({ profile }) {
           ))}
         </div>
       </section>
+      <GitHubContributions username={profile.githubUsername} />
     </div>
   );
 }

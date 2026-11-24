@@ -225,6 +225,165 @@ h2 {
   height: 18px;
 }
 
+/* GitHub Contributions */
+.gh-section {
+  margin-top: 52px;
+}
+
+.gh-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.gh-title {
+  color: #1f2328;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+.gh-link,
+.gh-legend {
+  color: #59636e;
+  font-size: 12px;
+}
+
+.gh-link {
+  text-decoration: none;
+}
+
+.gh-link:hover {
+  color: #1f2328;
+  text-decoration: underline;
+}
+
+.gh-box {
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  padding: 16px 19px 14px;
+}
+
+.gh-wrap {
+  position: relative;
+}
+
+.gh-tooltip {
+  position: absolute;
+  z-index: 10;
+  transform: translate(-50%, calc(-100% - 8px));
+  padding: 5px 8px;
+  border-radius: 6px;
+  background: #24292f;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.35;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.gh-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #24292f;
+}
+
+.gh-scroll {
+  overflow-x: auto;
+}
+
+.gh-table {
+  border-collapse: separate;
+  border-spacing: 2px;
+  margin: 0 auto;
+}
+
+.gh-table td {
+  padding: 0;
+}
+
+.gh-month-row {
+  height: 16px;
+}
+
+.gh-axis {
+  min-width: 27px;
+}
+
+.gh-month-cell,
+.gh-day-cell {
+  position: relative;
+}
+
+.gh-month-label,
+.gh-day-label {
+  position: absolute;
+  left: 0;
+  color: var(--text-body);
+  font-size: 12px;
+  line-height: 1;
+}
+
+.gh-month-label {
+  top: 0;
+  white-space: nowrap;
+}
+
+.gh-day-label {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.gh-cell {
+  width: 11px;
+  min-width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  background: #f6f6f6;
+  box-shadow: inset 0 0 0 1px rgba(27, 31, 35, 0.06);
+}
+
+.gh-cell[data-level="1"] { background: #dddddd; }
+.gh-cell[data-level="2"] { background: #a5a5a5; }
+.gh-cell[data-level="3"] { background: #646464; }
+.gh-cell[data-level="4"] { background: #2f2f2f; }
+
+.gh-retry {
+  min-height: 30px;
+  padding: 0 12px;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  background: #f6f8fa;
+  color: #1f2328;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.gh-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+  max-width: 720px;
+  margin: 10px auto 0;
+  padding: 0 2px 0 31px;
+}
+
+.gh-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
 .featured-quote {
   max-width: 620px;
   margin-top: auto;
@@ -454,8 +613,179 @@ h2 {
     padding-bottom: 0;
   }
 
-  .featured-quote {
+  /* GitHub Contributions */
+.gh-section {
+  margin-top: 52px;
+}
+
+.gh-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.gh-title {
+  color: #1f2328;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+.gh-link,
+.gh-legend {
+  color: #59636e;
+  font-size: 12px;
+}
+
+.gh-link {
+  text-decoration: none;
+}
+
+.gh-link:hover {
+  color: #1f2328;
+  text-decoration: underline;
+}
+
+.gh-box {
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  padding: 16px 19px 14px;
+}
+
+.gh-wrap {
+  position: relative;
+}
+
+.gh-tooltip {
+  position: absolute;
+  z-index: 10;
+  transform: translate(-50%, calc(-100% - 8px));
+  padding: 5px 8px;
+  border-radius: 6px;
+  background: #24292f;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.35;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.gh-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #24292f;
+}
+
+.gh-scroll {
+  overflow-x: auto;
+}
+
+.gh-table {
+  border-collapse: separate;
+  border-spacing: 2px;
+  margin: 0 auto;
+}
+
+.gh-table td {
+  padding: 0;
+}
+
+.gh-month-row {
+  height: 16px;
+}
+
+.gh-axis {
+  min-width: 27px;
+}
+
+.gh-month-cell,
+.gh-day-cell {
+  position: relative;
+}
+
+.gh-month-label,
+.gh-day-label {
+  position: absolute;
+  left: 0;
+  color: var(--text-body);
+  font-size: 12px;
+  line-height: 1;
+}
+
+.gh-month-label {
+  top: 0;
+  white-space: nowrap;
+}
+
+.gh-day-label {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.gh-cell {
+  width: 11px;
+  min-width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  background: #f6f6f6;
+  box-shadow: inset 0 0 0 1px rgba(27, 31, 35, 0.06);
+}
+
+.gh-cell[data-level="1"] { background: #dddddd; }
+.gh-cell[data-level="2"] { background: #a5a5a5; }
+.gh-cell[data-level="3"] { background: #646464; }
+.gh-cell[data-level="4"] { background: #2f2f2f; }
+
+.gh-retry {
+  min-height: 30px;
+  padding: 0 12px;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  background: #f6f8fa;
+  color: #1f2328;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.gh-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+  max-width: 720px;
+  margin: 10px auto 0;
+  padding: 0 2px 0 31px;
+}
+
+.gh-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.featured-quote {
     padding: 52px 0 40px;
+  }
+
+  .gh-section {
+    margin-top: 40px;
+  }
+
+  .gh-box {
+    padding: 12px;
+  }
+
+  .gh-footer {
+    padding: 0;
   }
 
   .photo-grid {
