@@ -5,8 +5,8 @@ export default function Photos() {
     <h1>Photos</h1>
     <p className="page-description">A few things I’ve seen along the way.</p>
     {photos.length === 0 ? <p className="empty-state">No photos here yet.</p> : <div className="photo-grid">
-      {photos.map((photo) => <figure className="photo-item" key={photo.id}>
-        <img src={photo.src} alt={photo.alt || photo.title} loading="lazy" />
+      {photos.map((photo) => <figure className="photo-item" key={photo.src} data-orientation={photo.orientation}>
+        <img src={photo.src} alt={photo.title} loading="lazy" />
         <figcaption><span>{photo.title}</span>{photo.location && <span className="photo-location">{photo.location}</span>}</figcaption>
       </figure>)}
     </div>}

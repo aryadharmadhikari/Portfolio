@@ -462,10 +462,18 @@ h2 {
 .photo-item img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 4;
   border-radius: 8px;
   object-fit: cover;
   background: #f3f3f3;
+}
+
+.photo-item[data-orientation="landscape"] {
+  grid-column: 1 / -1;
+}
+
+.photo-item[data-orientation="landscape"] img {
+  aspect-ratio: auto;
 }
 
 .photo-item figcaption {
@@ -549,7 +557,15 @@ h2 {
     gap: 22px 12px;
   }
 
-  .photo-item figcaption {
+  .photo-item[data-orientation="landscape"] {
+  grid-column: 1 / -1;
+}
+
+.photo-item[data-orientation="landscape"] img {
+  aspect-ratio: auto;
+}
+
+.photo-item figcaption {
     flex-direction: column;
     gap: 2px;
   }

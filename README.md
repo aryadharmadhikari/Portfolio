@@ -31,7 +31,7 @@ Create a production build with `npm run build`. Preview it locally with `npm run
 ## Add content
 
 - Add blog entries to `src/content/posts.js`. Each entry can include `slug`, `date`, `title`, `excerpt`, `body`, and `tags`.
-- Put photo files in `public/photos/` and add their `id`, `src`, `title`, optional `alt`, and optional `location` to `src/content/photos.js`. Use paths such as `/photos/coast.jpg` for `src`.
+- Put photo files in `public/photos/` and add their `src`, `title`, and optional `location` to `src/content/photos.js`. Use paths such as `/photos/coast.jpg` for `src`.
 - Rebuild and redeploy after editing content.
 
 Update the profile links in `src/data.js`; edit the introduction and other home page content in `src/pages/Home.jsx`.
